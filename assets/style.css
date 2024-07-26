@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+/* this is clasic web site so use similer color codes */
+:root {
+  --primary-color: #1818ff;
+  --second-prime-color: #3c51ddf2;
+  --secontry-color: #fff;
+  --background-color: #ccc;
+  --text-color: #000;
+  --hover-color: #00fdf2;
+
+  --head-font: "Playwrite NG Modern", cursive;
+  --body-font: "Poppins", sans-serif;
+}
+
+/* set some font size and style in one area */
+.h1-main {
+  font-size: 3.8rem;
+  font-weight: 600;
+  font-family: var(--head-font);
+  color: var(--primary-color);
+}
+
+.h1-sub {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--head-font);
+  color: var(--second-prime-color);
+}
+
+.p-main {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+.p-sub {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: var(--body-font);
+  color: var(--background-color);
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* menu */
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: var(--secontry-color);
+  color: var(--primary-color);
+  z-index: 3;
+  box-shadow: 1px 1px 15px var(--background-color);
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+
+.nav-logo {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: var(--body-font);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+.nav-menu .link {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.3rem;
+  font-family: var(--body-font);
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu .link li a:hover {
+  border-bottom: 0.1rem solid var(--primary-color);
+  color: #00fdf2;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text-color);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.nav-menu .hide {
+  display: none;
+  flex-direction: column;
+  text-align: end;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu .hide.show {
+  display: flex;
+}
+
+/* home */
+
+#home {
+  height: 80vh;
+  top: 10vh;
+  position: relative;
+}
+
+.bg-svg img {
+  position: absolute;
+  margin-top: 30vh;
+  height: max-content;
+  z-index: 1;
+}
+
+.main-container {
+  position: absolute;
+  z-index: 2;
+}
+
+.tittle-container {
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+
+.img-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.home-img {
+  margin-top: -4.4rem;
+  width: 25%;
+}
+
+.social {
+  position: relative;
+  display: inline;
+  font-size: 2.2rem;
+  color: var(--background-color);
+  top: -60vh;
+}
+
+.social .fa-brands {
+  transform: rotate(-90deg);
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  opacity: 70%;
+}
+
+.social .fa-brands:hover {
+  color: var(--hover-color);
+}
+
+/* about */
+#about {
+  margin: 7rem auto;
+  background-color: var(--background-color);
+  height: 130vh;
+  width: 100%;
+}
+
+.sub-head {
+  margin: 1rem 10rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  font-size: 5.5rem;
+}
+
+.skills .fa-brands {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.skills .fa-brands:hover {
+  opacity: 1;
+  text-shadow: 0.5px 0.5px 3px gray;
+}
+
+.skills .fa-github:hover {
+  color: var(--text-color);
+}
+
+.skills .fa-html5:hover {
+  color: #ff0000;
+}
+
+.skills .fa-css3-alt:hover {
+  color: #17d1ff;
+}
+
+.skills .fa-wordpress:hover {
+  color: #029afd;
+}
+
+.skills .fa-node:hover {
+  color: #039208;
+}
+
+.head {
+  font-weight: 600;
+}
+
+/* development container */
+
+.development-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  margin: 5rem;
+}
+
+.development-part {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.development-part:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  border-radius: 0px;
+  box-shadow: 15px 15px 20px #a4a4a4, -15px -15px 50px #ffffff;
+}
+
+.development-part .p-icon,
+.development-part .p-sub,
+.development-part .p-main {
+  transition: all 0.1s ease-in-out;
+}
+
+.development-part:hover .p-sub {
+  color: var(--secontry-color);
+}
+
+.development-part:hover .p-icon {
+  color: var(--primary-color);
+}
+
+.development-part:hover .p-main {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.p-icon {
+  font-size: 2.5rem;
+  color: var(--second-prime-color);
+}
+
+/* portfolio  */
+
+#portfolio {
+  height: auto;
+  margin: 7rem auto;
+}
+
+.project-container {
+  margin: 1rem 15%;
+  line-height: 0.5;
+}
+
+.project {
+  margin: 5rem auto 0;
+  background-color: var(--second-prime-color);
+  border-radius: 0 0 40px 0;
+}
+
+.project-slider {
+  justify-content: space-around;
+  color: var(--background-color);
+}
+.project-img {
+  width: 100%;
+  text-align: center;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-details {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-btn {
+  margin: 30px 0;
+}
+
+.project-btn button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0.1rem solid transparent;
+  color: var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-btn button:hover {
+  box-shadow: 0.1px 0.1px 15px var(--text-color);
+  background: transparent;
+  border-color: var(--secontry-color);
+  color: var(--secontry-color);
+}
+
+.project .project-details .p-main {
+  color: var(--secontry-color);
+}
+
+/* review */
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.people-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.people {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.prev,
+.next {
+  text-align: center;
+  border: 0.1rem solid transparent;
+  background-color: transparent;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.prev:active,
+.next:active {
+  color: #00fdf2;
+}
+
+.people-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.people-name,
+.people-review {
+  margin: 10px 0;
+}
+
+.slide-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* contact */
+#contact {
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  box-shadow: 0.1px 0.1px 10px rgb(0, 0, 0.2);
+}
+
+.contact {
+  display: flex;
+  margin: 2% 10%;
+}
+
+.contact div {
+  width: 49%;
+  margin: 1%;
+}
+
+.contact-details {
+  padding: 1rem;
+  background-color: var(--second-prime-color);
+  box-shadow: 0.1px 0.1px 10px rgb(0, 0, 0.2);
+  border-radius: 15px 25px 60% 10px;
+}
+
+.contact .project-btn button {
+  box-shadow: 0.1px 0.1px 5px rgb(0, 0, 0.2);
+}
+
+.contact .project-btn button:hover,
+.contact .project-btn button:active {
+  background-color: var(--primary-color);
+}
+
+.mail {
+  color: var(--text-color);
+  line-height: 0.9;
+  cursor: pointer;
+  border-bottom: 0.1rem solid transparent;
+  width: fit-content;
+  transition: all 0.3s ease-in;
+}
+
+.mail:active {
+  color: var(--hover-color);
+  border-color: var(--second-prime-color);
+}
+
+.contact-form {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: var(--body-font);
+  background: rgba(0, 0, 0, 0.187);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 2px solid rgba(255, 255, 255, 0.924);
+}
+
+.contact-form label{
+  color: var(--secontry-color);
+}
+
+.contact-form textarea{
+ height: 1.1rem;
+}
+.contact-form input , .contact-form textarea{
+  border: 0.1rem solid transparent;
+  border-bottom: 0.1rem solid var(--background-color);
+  background-color: transparent;
+  width: 75%;
+  margin: 0.4rem auto;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  font-size: 1rem;
+}
+
+.contact-form input:hover , .contact-form textarea:hover,
+.contact-form input:focus , .contact-form textarea:focus{
+  border: 0.1rem solid transparent;
+  border-bottom: 0.1rem solid var(--second-prime-color);
+  background-color: transparent;
+  outline: none;
+}
+
+.contact-form button{
+  float: right;
+  margin-right: 25%;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0.1rem solid var(--secontry-color);
+  border-radius: 5px;
+  background-color: transparent ;
+  color: var(--secontry-color);
+  transition: all 0.3s ease-in;
+}
+
+.contact-form button:focus , 
+.contact-form button:active ,
+.contact-form button:hover{
+  background: var(--primary-color);
+}
