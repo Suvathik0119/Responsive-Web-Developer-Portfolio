@@ -9,7 +9,7 @@ Would you like to make any adjustments or add any specific details?
 **contact me:**[website](https://sasikaranathan-suvathik.netlify.app/).
 
 ## Live Demo  
-- **Link :** https://responsive-web-developer-portfolio.netlify.app/
+- **Link :** [https://responsive-web-developer-portfolio.netlify.app/](https://dev-web-developer-portfolio.netlify.app/)
 
 ## Screenshot
 -- ![mobile and desktop collage](https://github.com/user-attachments/assets/8f52948e-9f6e-405b-ac0c-82cc66908606)
